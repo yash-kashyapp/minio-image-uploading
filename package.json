@@ -1,0 +1,20 @@
+{
+  "name": "minioproject",
+  "version": "1.0.0",
+  "description": "This is complete about File Upload on MinIo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "minio": "^8.0.1",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7"
+  }
+}
