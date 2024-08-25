@@ -25,7 +25,7 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/yourproject.git
+    git clone https://github.com/yash-k2001/minio-image-uploading.git
     cd yourproject
     ```
 
