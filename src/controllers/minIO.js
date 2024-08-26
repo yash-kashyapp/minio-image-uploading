@@ -19,4 +19,16 @@ const uploadToMinio = (req, res) => {
     });    
 };
 
-module.exports = { uploadToMinio }
+/* To Fetch Image object from minio storage */
+
+const fetchMinIo = async (req, res) => {
+    let fileName = req.file;
+    try {        
+        let response = await minIoClient.presignedGetObject(bucketName, fileName);
+        return response;
+    } catch (error) {
+        throw new Error(error);
+    }    
+}
+
+module.exports = { uploadToMinio, fetchMinIo }
